@@ -1,21 +1,34 @@
 import { test as baseTest } from '@playwright/test'
-import { LoginPage } from '../pageObjectModel/LoginPage'
-import { ProfilePage } from '../pageObjectModel/ProfilePage'
+import { LoginPage } from '../pageObjectModel/MaxiTuComercio/LoginPage/LoginPage'
+import { CerrarModalTeDamosBienvenida } from '../pageObjectModel/MaxiTuComercio/CerrarModalTeDamosBienvenida'
+import { IngresarCuenta } from '../pageObjectModel/MaxiTuComercio/IngresarCuenta'
 
 const environment = process.env.TEST || 'qa'
 
 const test = baseTest.extend<{
+    // profilePage: ProfilePage
     loginPage: LoginPage
-    profilePage: ProfilePage
+    cerrarModalTeDamosBienvenida: CerrarModalTeDamosBienvenida
+    ingresarCuenta: IngresarCuenta
+
 }>({
+    //COMUNES
+    cerrarModalTeDamosBienvenida: async ({ page, context }, use) => {
+        await use(new CerrarModalTeDamosBienvenida(page, context, environment))
+    },
+    ingresarCuenta: async ({ page, context }, use) => {
+        await use(new IngresarCuenta(page, context, environment))
+    },
     loginPage: async ({ page, context }, use) => {
-        const loginPage = new LoginPage(page, context, environment)
-        await use(loginPage)
+        await use(new LoginPage(page, context, environment))
     },
-    profilePage: async ({ page, context }, use) => {
-        const profilePage = new ProfilePage(page, context, environment)
-        await use(profilePage)
-    },
+
+
+
+    // profilePage: async ({ page, context }, use) => {
+    //     const profilePage = new ProfilePage(page, context, environment)
+    //     await use(profilePage)
+    // },
 })
 
 export default test

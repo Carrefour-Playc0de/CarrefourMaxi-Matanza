@@ -1,5 +1,12 @@
 {
-    "baseURL": "https://underc0de.org/foro",
-    "username": "test.playc0de@gmail.com",
-    "password": "@Underc0de"
+    "baseURL": "https://maxi.carrefour.com.ar/tucomercio/",
+    "username": "mauricio_roh@carrefour.com",
+    "password": "Underc0de",
+    "data": {
+        "name": "",
+        "lastName": "",
+        "birthdate": "",
+        "adress": "",
+        "city": ""
+    }
 }
