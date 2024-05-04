@@ -19,7 +19,6 @@ export class MenuHamburAlmacenPastasSecas extends BasePage {
         await this.click(this.PASTAS_SECAS)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburAlmacenPastasSecas(): Promise<void> {

@@ -19,7 +19,6 @@ export class MenuHamburLacteosProdsFrescosLeches extends BasePage {
         await this.click(this.LECHES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburLacteosProdsFrescosLeches(): Promise<void> {

@@ -19,7 +19,6 @@ export class MenuHamburAlmacenReposteriaPostres extends BasePage {
         await this.click(this.REPOSTERIA_POSTRES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburAlmacenReposteriaPostres(): Promise<void> {

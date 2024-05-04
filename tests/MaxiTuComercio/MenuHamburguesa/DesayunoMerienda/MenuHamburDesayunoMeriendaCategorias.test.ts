@@ -12,55 +12,55 @@ test.beforeEach(async ({cerrarModalTeDamosBienvenida, menuHamburguesa, menuHambu
     })
 })
 
-test('@XYZQW @Smoke @Regression () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: VER TODO', async ({menuHamburDesayunoMeriendaVerTodo}) => {
+test('@Smoke @Regression (B2B-TC-376) Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: VER TODO', async ({menuHamburDesayunoMeriendaVerTodo}) => {
 
     await test.step('Click en ', async () => {
         await menuHamburDesayunoMeriendaVerTodo.navigateToMenuHamburDesayunoMeriendaVerTodo()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Azucar y Endulzantes', async ({menuHamburDesayunoMeriendaAzucarEndulzantes}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-377) Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Azucar y Endulzantes', async ({menuHamburDesayunoMeriendaAzucarEndulzantes}) => {
 
     await test.step('Click en Azucar y Endulzantes', async () => {
         await menuHamburDesayunoMeriendaAzucarEndulzantes.navigateToMenuHamburDesayunoMeriendaAzucarEndulzantes()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Budines y Magdalenas', async ({menuHamburDesayunoMeriendaBudinesMagdalenas}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-378) Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Budines y Magdalenas', async ({menuHamburDesayunoMeriendaBudinesMagdalenas}) => {
 
     await test.step('Click en Budines y Magdalenas', async () => {
         await menuHamburDesayunoMeriendaBudinesMagdalenas.navigateToMenuHamburDesayunoMeriendaBudinesMagdalenas()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Cafe', async ({menuHamburDesayunoMeriendaCafe}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-379) Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Cafe', async ({menuHamburDesayunoMeriendaCafe}) => {
 
     await test.step('Click en Cafe', async () => {
         await menuHamburDesayunoMeriendaCafe.navigateToMenuHamburDesayunoMeriendaCafe()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Cereales y Barritas', async ({menuHamburDesayunoMeriendaCerealesBarritas}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-380) Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Cereales y Barritas', async ({menuHamburDesayunoMeriendaCerealesBarritas}) => {
 
     await test.step('Click en Cereales y Barritas', async () => {
         await menuHamburDesayunoMeriendaCerealesBarritas.navigateToMenuHamburDesayunoMeriendaCerealesBarritas()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Galletitas Bizcochitos y Tostadas', async ({menuHamburDesayunoMeriendaGalletitasBizcochitosTostadas}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-381) Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Galletitas Bizcochitos y Tostadas', async ({menuHamburDesayunoMeriendaGalletitasBizcochitosTostadas}) => {
 
     await test.step('Click en Galletitas Bizcochitos y Tostadas', async () => {
         await menuHamburDesayunoMeriendaGalletitasBizcochitosTostadas.navigateToMenuHamburDesayunoMeriendaGalletitasBizcochitosTostadas()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Infusiones', async ({menuHamburDesayunoMeriendaInfusiones}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-382) Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Infusiones', async ({menuHamburDesayunoMeriendaInfusiones}) => {
 
     await test.step('Click en Infusiones', async () => {
         await menuHamburDesayunoMeriendaInfusiones.navigateToMenuHamburDesayunoMeriendaInfusiones()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Mermeladas y Otros Dulces', async ({menuHamburDesayunoMeriendaMermeladasOtrosDulces}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-383 Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Mermeladas y Otros Dulces', async ({menuHamburDesayunoMeriendaMermeladasOtrosDulces}) => {
 
     await test.step('Click en Mermeladas y Otros Dulces', async () => {
         await menuHamburDesayunoMeriendaMermeladasOtrosDulces.navigateToMenuHamburDesayunoMeriendaMermeladasOtrosDulces()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Yerba', async ({menuHamburDesayunoMeriendaYerba}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-384) Verificar que funciona correctamente al clickear en el Menu Desayuno y Merienda: Yerba', async ({menuHamburDesayunoMeriendaYerba}) => {
 
     await test.step('Click en Yerba', async () => {
         await menuHamburDesayunoMeriendaYerba.navigateToMenuHamburDesayunoMeriendaYerba()

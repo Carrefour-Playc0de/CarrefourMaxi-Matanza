@@ -19,7 +19,6 @@ export class MenuHamburAlmacenArrozLegumbres extends BasePage {
         await this.click(this.ARROZ_LEGUMBRES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburAlmacenArrozLegumbres(): Promise<void> {

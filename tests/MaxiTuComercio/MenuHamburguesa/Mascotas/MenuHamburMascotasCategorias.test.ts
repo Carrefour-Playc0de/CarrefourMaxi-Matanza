@@ -12,19 +12,19 @@ test.beforeEach(async ({cerrarModalTeDamosBienvenida, menuHamburguesa, menuHambu
     })
 })
 
-test('@XYZQW @Smoke @Regression () Verificar que funciona correctamente al clickear en el Menu Mascotas: VER TODO', async ({menuHamburMascotasVerTodos}) => {
+test('@Smoke @Regression (B2B-TC-402) Verificar que funciona correctamente al clickear en el Menu Mascotas: VER TODO', async ({menuHamburMascotasVerTodos}) => {
 
     await test.step('Click en Mascotas VER TODO', async () => {
         await menuHamburMascotasVerTodos.navigateToMenuHamburMascotasVerTodos()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Mascotas: Alimentos para Gatos', async ({menuHamburMascotasAlimentosGatos}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-403) Verificar que funciona correctamente al clickear en el Menu Mascotas: Alimentos para Gatos', async ({menuHamburMascotasAlimentosGatos}) => {
 
     await test.step('Click en Alimentos para Gatos', async () => {
         await menuHamburMascotasAlimentosGatos.navigateToMenuHamburMascotasAlimentosGatos()
     })
 })
-test('@XYZQW @Regression @MenuHamburguesa () Verificar que funciona correctamente al clickear en el Menu Mascotas: Alimentos y Snacks para Perros', async ({menuHamburMascotasAlimentosSnacksPerros}) => {
+test('@Regression @MenuHamburguesa (B2B-TC-404) Verificar que funciona correctamente al clickear en el Menu Mascotas: Alimentos y Snacks para Perros', async ({menuHamburMascotasAlimentosSnacksPerros}) => {
 
     await test.step('Click en Alimentos y Snacks para Perros', async () => {
         await menuHamburMascotasAlimentosSnacksPerros.navigateToMenuHamburMascotasAlimentosSnacksPerros()

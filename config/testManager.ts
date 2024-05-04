@@ -108,7 +108,6 @@ import { MenuHamburAlmacenVerTodo } from '../pageObjectModel/MaxiTuComercio/Menu
 import {
     MenuHamburAlmacenArrozLegumbres
 } from '../pageObjectModel/MaxiTuComercio/MenuHamburguesa/Almacen/MenuHamburAlmacenArrozLegumbres'
-import { MenuHamburAlmacenArroz } from '../pageObjectModel/MaxiTuComercio/MenuHamburguesa/Almacen/MenuHamburAlmacenBebidas'
 import {
     MenuHamburAlmacenCaldosSopasPure
 } from '../pageObjectModel/MaxiTuComercio/MenuHamburguesa/Almacen/MenuHamburAlmacenCaldosSopasPure'
@@ -380,7 +379,6 @@ const test = baseTest.extend<{
     menuHamburPerfumeria: MenuHamburPerfumeria
     menuHamburAlmacenVerTodo: MenuHamburAlmacenVerTodo
     menuHamburAlmacenArrozLegumbres: MenuHamburAlmacenArrozLegumbres
-    menuHamburAlmacenArroz: MenuHamburAlmacenArroz
     menuHamburAlmacenCaldosSopasPure: MenuHamburAlmacenCaldosSopasPure
     menuHamburAlmacenEnlatadosConservas: MenuHamburAlmacenEnlatadosConservas
     menuHamburAlmacenGolosinasChocolates: MenuHamburAlmacenGolosinasChocolates
@@ -642,9 +640,6 @@ const test = baseTest.extend<{
     },
     menuHamburAlmacenArrozLegumbres: async ({ page, context }, use) => {
         await use(new MenuHamburAlmacenArrozLegumbres(page, context, environment))
-    },
-    menuHamburAlmacenArroz: async ({ page, context }, use) => {
-        await use(new MenuHamburAlmacenArroz(page, context, environment))
     },
     menuHamburAlmacenCaldosSopasPure: async ({ page, context }, use) => {
         await use(new MenuHamburAlmacenCaldosSopasPure(page, context, environment))

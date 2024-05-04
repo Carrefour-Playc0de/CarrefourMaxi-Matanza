@@ -19,7 +19,6 @@ export class MenuHamburAlmacenGolosinasChocolates extends BasePage {
         await this.click(this.GOLOSINAS_CHOCOLATES)
         await this.page.waitForLoadState("domcontentloaded")
         await this.page.waitForFunction(() => document.readyState === 'complete')
-        await this.page.waitForTimeout(3000)
     }
 
     async navigateToMenuHamburAlmacenGolosinasChocolates(): Promise<void> {
