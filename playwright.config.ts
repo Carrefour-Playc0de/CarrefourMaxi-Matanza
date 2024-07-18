@@ -28,8 +28,11 @@ export default defineConfig({
   reporter: [
     ['list'],
     ["allure-playwright", { detail: true }],
-    // ['html', { outputFolder: './reports/html-reports', open: 'never' }]
-    ['html', { outputFolder: 'playwright-report' }]
+    ['html', { outputFolder: './reports/html-reports', open: 'never' }],
+      // esto agregue ******
+    [process.env.CI ? 'github' : 'list']
+    // hasta acá agregue ******
+
     // To generate Azure Pipeline Results use the following reporter
     // ['junit', { outputFile: 'test-results/junit.xml' }],
   ],
