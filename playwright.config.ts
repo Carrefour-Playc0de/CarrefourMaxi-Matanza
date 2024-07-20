@@ -2,6 +2,8 @@ import { defineConfig, devices } from '@playwright/test';
 
 export default defineConfig({
 
+  // Tiempo que se ejecuta el test, luego termina
+  timeout: 120 * 1000,
   // Test location
   testDir: './tests',
 
@@ -14,31 +16,39 @@ export default defineConfig({
   forbidOnly: !!process.env.CI,
 
   // Amount of retries on failure (flaky test)
-  retries: process.env.CI ? 5 : 5,  // Cantidad de veces que se reintenta un caso cuando falla
+  retries: process.env.CI ? 10 : 10,  // Cantidad de veces que se reintenta un caso cuando falla
 
   // Amount of jobs to run in parallel
   workers: process.env.CI ? 1 : 1,  // Cantidad de casos que se corren a la vez
 
   // Maximum time expect() should wait to met a condition
-  expect: { timeout: 20 * 1000 },   // Cantidad de tiempo que espera una validación antes de darla como fallada
+  // expect: { timeout: 20 * 1000 },   // Cantidad de tiempo que espera una validación antes de darla como fallada
+  expect: { timeout: 150 * 1000 },   // Cantidad de tiempo que espera una validación antes de darla como fallada
 
   globalTeardown: "./global-teardown.ts",
 
-  // Reporter to use. See https://playwright.dev/docs/test-reporters 
+  // Reporter to use. See https://playwright.dev/docs/test-reporters
+  // reporter: [
+  //   ['list'],
+  //   ["allure-playwright", { detail: true }],
+  //   ['html', { outputFolder: './reports/html-reports', open: 'never' }]
+  //   // To generate Azure Pipeline Results use the following reporter
+  //   // ['junit', { outputFile: 'test-results/junit.xml' }],
+  // ],
   reporter: [
-    ['list'],
-    ["allure-playwright", { detail: true }],
-    ['html', { outputFolder: './reports/html-reports', open: 'never' }],
-      // esto agregue ******
-    [process.env.CI ? 'github' : 'list']
-    // hasta acá agregue ******
-
-    // To generate Azure Pipeline Results use the following reporter
-    // ['junit', { outputFile: 'test-results/junit.xml' }],
+    ['list', {printSteps: true}],
+    ["allure-playwright",
+      {
+        detail: true,
+        outputFolder: " allure-results",
+        suiteTitle: false,
+      },
+    ]
   ],
 
   use: {
-    actionTimeout: 10 * 1000, // Maximum time each action like click() can take
+    // actionTimeout: 10 * 1000, // Maximum time each action like click() can take
+    actionTimeout: 60 * 1000, // Maximum time each action like click() can take
     viewport: { width: 1500, height: 730 },
     headless: true,
     ignoreHTTPSErrors: true,

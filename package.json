@@ -32,12 +32,12 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/LucaAhumada/script-savvy-playwright"
+        "url": "https://github.com/Carrefour-Playc0de/CarrefourMaxi-Matanza"
     },
     "bugs": {
-        "url": "https://github.com/LucaAhumada/script-savvy-playwright/issues"
+        "url": "https://github.com/Carrefour-Playc0de/CarrefourMaxi-Matanza/issues"
     },
-    "homepage": "https://github.com/LucaAhumada/script-savvy-playwright",
+    "homepage": "https://github.com/Carrefour-Playc0de/CarrefourMaxi-Matanza",
     "engines": {
         "node": ">=14.0.0"
     },
