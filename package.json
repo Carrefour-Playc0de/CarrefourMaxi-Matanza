@@ -42,16 +42,9 @@
         "node": ">=14.0.0"
     },
     "scripts": {
-        "test": "playwright test --headed",
-        "test:monitor": "playwright test --ui",
-        "test:chrome": "playwright test --project=chrome --headed",
-        "test:firefox": "playwright test --project=firefox --headed",
-        "test:record": "playwright codegen",
-        "test:trace": "playwright show-trace",
-        "test:report": "robocopy .\\allure-report\\history .\\allure-results\\history /MIR && allure generate --clean ./allure-results && allure open",
-        "test:load": "k6 run ./performance/runner.js",
-        "audit:desktop": "node ./src/core/lighthouse.js desktop && open-cli ./reports/lighthouse/LighthouseReport.html",
-        "audit:mobile": "node ./src/core/lighthouse.js mobile && open-cli ./reports/lighthouse/LighthouseReport.html"
+        "test": "npx playwright test",
+        "ui-mode": "npx playwright test --ui",
+        "report": "allure generate allure-results --clean -o allure-report && allure open allure-report"
     },
     "publishConfig": {
         "access": "public"
