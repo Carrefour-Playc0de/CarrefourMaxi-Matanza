@@ -3,12 +3,7 @@
     "version": "1.0.0",
     "description": "A Comprehensive Test Automation Framework Based on Playwright. Intuitive. Efficient. Made simple.",
     "main": "index.js",
-    "keywords": [
-        "testing",
-        "playwright",
-        "automation",
-        "bdd"
-    ],
+    "keywords": [],
     "author": "Luca Ahumada",
     "license": "MIT",
     "devDependencies": {
@@ -30,14 +25,6 @@
         "fs-extra": "^11.1.1",
         "winston": "^3.11.0"
     },
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/Carrefour-Playc0de/CarrefourMaxi-Matanza"
-    },
-    "bugs": {
-        "url": "https://github.com/Carrefour-Playc0de/CarrefourMaxi-Matanza/issues"
-    },
-    "homepage": "https://github.com/Carrefour-Playc0de/CarrefourMaxi-Matanza",
     "engines": {
         "node": ">=14.0.0"
     },
